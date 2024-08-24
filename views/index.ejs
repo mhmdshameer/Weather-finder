@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="weather-container">
+        <form action="/submit" method="post">
+            <h2>Weather Finder</h2>
+            <input type="text" id="city" name="city" placeholder="Enter city">
+            <button id="btn" value="search" type="submit">Search</button>
+        </form>
+         <img   src="<%= icon %>" > 
+         
+        <div id="temp-div"><%= temp %></div>
+        <div id="weather-info"><p><%= cityName %></p> <p><%= description %></p></div>
+        <div id="hourly-forecast"></div>
+    </div>
+</body>
+</html>
